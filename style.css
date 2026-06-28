@@ -6,11 +6,24 @@ body{
 }
 
 nav{
+    position:sticky;
+    top:0;
+    z-index:1000;
+
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:20px 50px;
-    background:#081224;
+
+    width:90%;
+    max-width:1400px;
+    margin:20px auto;
+    padding:18px 40px;
+
+    background:rgba(10,15,35,.65);
+    backdrop-filter:blur(15px);
+
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:15px;
 }
 
 .logo{
@@ -50,11 +63,9 @@ nav a{
     font-size:60px;
     color:#00bfff;
 }
-
 .games{
     padding:40px;
 }
-
 .game-card{
     display:inline-block;
     width:260px;
@@ -70,10 +81,9 @@ nav a{
 
     backdrop-filter:blur(10px);
 }
-
 .game-card img{
     width:100%;
-    height:320px;
+    height:280px;
     object-fit:cover;
     border-radius:18px 18px 0 0;
 }
@@ -114,8 +124,8 @@ button:hover{
 }
 
 .game-card:hover{
-    transform:translateY(-12px) scale(1.03);
-
+    transform:translateY(-10px) scale(1.04);
+}
     box-shadow:
         0 0 20px #00d9ff,
         0 0 45px rgba(0,217,255,.45);
@@ -160,4 +170,33 @@ button{
 button:hover{
     transform:scale(1.08);
     box-shadow:0 0 30px #00d9ff;
+}
+.game-card{
+    animation:fadeUp .8s ease forwards;
+}
+
+@keyframes fadeUp{
+
+    from{
+        opacity:0;
+        transform:translateY(50px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+.game-card{
+
+    background:rgba(255,255,255,.05);
+
+    backdrop-filter:blur(15px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:18px;
+
+    overflow:hidden;
 }
