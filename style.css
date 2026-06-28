@@ -1,3 +1,6 @@
+html{
+    scroll-behavior:smooth;
+}
 body{
     margin:0;
     font-family:Arial,sans-serif;
@@ -125,11 +128,9 @@ button:hover{
 
 .game-card:hover{
     transform:translateY(-10px) scale(1.04);
-}
     box-shadow:
         0 0 20px #00d9ff,
         0 0 45px rgba(0,217,255,.45);
-
     border-color:#00d9ff;
 }
 header{
@@ -156,21 +157,6 @@ header{
     margin:10px 0;
 }
 
-button{
-    background:linear-gradient(45deg,#00d9ff,#0077ff);
-    color:white;
-    border:none;
-    padding:12px 25px;
-    border-radius:30px;
-    cursor:pointer;
-    transition:.3s;
-    box-shadow:0 0 15px #00d9ff;
-}
-
-button:hover{
-    transform:scale(1.08);
-    box-shadow:0 0 30px #00d9ff;
-}
 .game-card{
     animation:fadeUp .8s ease forwards;
 }
@@ -199,4 +185,38 @@ button:hover{
     border-radius:18px;
 
     overflow:hidden;
+}
+.games{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+@media(max-width:768px){
+
+    nav{
+        flex-direction:column;
+        gap:15px;
+        padding:15px;
+    }
+
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .hero img{
+        height:250px;
+    }
+
+    .hero-text h1{
+        font-size:36px;
+    }
+
+    .game-card{
+        width:90%;
+        max-width:320px;
+        margin:10px 0;
+    }
 }
