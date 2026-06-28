@@ -139,3 +139,25 @@ header{
 
     border-bottom:1px solid rgba(255,255,255,.08);
 }
+.price{
+    color:#00d9ff;
+    font-size:22px;
+    font-weight:bold;
+    margin:10px 0;
+}
+
+button{
+    background:linear-gradient(45deg,#00d9ff,#0077ff);
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:30px;
+    cursor:pointer;
+    transition:.3s;
+    box-shadow:0 0 15px #00d9ff;
+}
+
+button:hover{
+    transform:scale(1.08);
+    box-shadow:0 0 30px #00d9ff;
+}
