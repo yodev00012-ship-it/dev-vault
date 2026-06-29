@@ -187,10 +187,14 @@ header{
     overflow:hidden;
 }
 .games{
+    padding:40px;
+}
+
+.game-container{
     display:flex;
     justify-content:center;
     flex-wrap:wrap;
-    gap:20px;
+    gap:30px;
 }
 
 @media(max-width:768px){
